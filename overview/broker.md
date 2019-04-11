@@ -36,3 +36,8 @@ const broker = new ServiceBroker({
 ## Broker 配置数据
 
 broker 所有配置项如下表所示：
+
+| 名称 | 类型 | 默认值 | 描述 |
+| --- | --- | --- | --- |
+| namespace | String | '' |  同一网络下分段节点的节点命名空间 |
+| nodeID | String | hostname + PID | 节点唯一标识，同一个命名空间下必须是唯一值 |
