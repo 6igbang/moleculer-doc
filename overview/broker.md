@@ -44,5 +44,7 @@ broker 所有配置项如下表所示：
 | logger | Boolean/Object/Function | console | 日志工具，默认情况下，将日志打印到控制台，也可以配置使用外部记录器，例如：[Winston](https://github.com/winstonjs/winston) 或 [Pino](https://github.com/pinojs/pino)。 [查看更多](https://moleculer.services/docs/0.13/logging.html) |
 | logLevel | String | info | 内置控制台记录器的日志级别（跟踪、调试、信息、警告、错误、致命）。 |
 | logFormatter | String/Function | 'default' | 内置控制台记录器的日志格式化程序。值：default, simple, short。也可以是一个函数。|
-| logObjectPrinter | Function | null | |
-
+| logObjectPrinter | Function | null | 内置控制台记录器的阵列打印机（是一个自定义数据对象） |
+| transporter | String/Object/Transporter | null | 转发器设置 [查看更多](https://moleculer.services/docs/0.13/networking.html) |
+| requestTimeout | Number | 0 | 请求超时的时间，单位是毫秒，Disabled的时候是 0 |
+| retryPolicy | Object | 请求重试策略设置，[查看更多](https://moleculer.services/docs/0.13/fault-tolerance.html#Retry) 
